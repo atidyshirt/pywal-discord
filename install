@@ -5,7 +5,7 @@ then
     exit 1
 fi
 
-installdir=/usr/share/pywal-discord
+installdir=$HOME/.config/pywal-discord
 
 if [ -e $installdir ]
 then

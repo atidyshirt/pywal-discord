@@ -1,5 +1,5 @@
 #!/bin/bash
-path="$HOME/.config/BetterDiscord/themes"
+path="$HOME/Library/Preferences/BetterDiscord/themes"
 theme="default"
 print_usage() {
   echo "Usage: $0 [-t theme] [-p path]"
@@ -18,7 +18,7 @@ while getopts 'p:vt:vh' flag; do
   esac
 done
 
-config=/usr/share/pywal-discord
+config=$HOME/.config/pywal-discord
 newfile=$path/pywal-discord-$theme.theme.css
 
 cat $config/meta.css $HOME/.cache/wal/colors.css $config/pywal-discord-$theme.css > $newfile 
